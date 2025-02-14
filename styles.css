@@ -5,11 +5,11 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  background-color: #f8f8f8;
+  font-family: 'Arial', sans-serif;
+  background-color: #f1f1f1;
   color: #333;
-  padding-top: 50px;
+  line-height: 1.6;
+  padding-top: 60px;
 }
 
 a {
@@ -17,41 +17,42 @@ a {
   color: inherit;
 }
 
-
-
 header {
-  background-color: #333;
+  background-color: #282c34;
   color: #fff;
   padding: 20px 0;
-  text-align: center;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
 header h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 header p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  text-align: center;
   margin-bottom: 20px;
 }
 
 nav ul {
   list-style: none;
-  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 nav ul li {
-  display: inline-block;
-  margin: 0 15px;
+  margin: 0 20px;
 }
 
 nav ul li a {
   font-size: 1.2rem;
   color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
   transition: color 0.3s ease;
 }
 
@@ -59,100 +60,107 @@ nav ul li a:hover {
   color: #00aaff;
 }
 
-
-
 section {
-  padding: 60px 0;
+  padding: 60px 20px;
+  text-align: center;
 }
 
 .container {
   width: 80%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 h2 {
   font-size: 2.5rem;
-  margin-bottom: 30px;
-  text-align: center;
+  margin-bottom: 40px;
+  color: #282c34;
 }
 
-section p {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  text-align: center;
-  color: #555;
-}
-
-section strong {
+strong {
   color: #00aaff;
 }
 
-
+section p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+}
 
 #projects {
   background-color: #fff;
-  padding: 60px 0;
 }
 
 .project {
-  background-color: #f4f4f4;
-  border-radius: 8px;
+  background-color: #fafafa;
   padding: 30px;
-  margin-bottom: 30px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .project h3 {
   font-size: 2rem;
-  margin-bottom: 15px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.project h2 {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 20px;
 }
 
 .project p {
   font-size: 1.1rem;
-  color: #666;
+  color: #777;
+  margin-bottom: 20px;
 }
 
 .project a {
   display: inline-block;
   font-size: 1.2rem;
-  margin-top: 15px;
   color: #00aaff;
   font-weight: bold;
-  transition: color 0.3s ease;
+  padding: 10px 20px;
+  border: 2px solid #00aaff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .project a:hover {
-  color: #005f7f;
+  background-color: #00aaff;
+  color: white;
 }
-
-
 
 form {
   background-color: #fff;
-  padding: 30px;
+  padding: 40px;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 form label {
   font-size: 1.1rem;
-  margin-bottom: 8px;
   display: block;
+  margin-bottom: 10px;
 }
 
 form input,
 form textarea {
   width: 100%;
   padding: 12px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
   border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
   font-size: 1.1rem;
+  color: #333;
 }
 
 form input:focus,
@@ -164,10 +172,10 @@ form textarea:focus {
 form button {
   background-color: #00aaff;
   color: white;
-  padding: 12px 25px;
+  padding: 12px 20px;
+  font-size: 1.2rem;
   border: none;
   border-radius: 5px;
-  font-size: 1.2rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -176,10 +184,8 @@ form button:hover {
   background-color: #007bb5;
 }
 
-
-
 footer {
-  background-color: #333;
+  background-color: #282c34;
   color: #fff;
   padding: 20px 0;
   text-align: center;
@@ -187,10 +193,6 @@ footer {
 
 footer p {
   font-size: 1rem;
-}
-
-footer .social {
-  margin-top: 10px;
 }
 
 footer .social a {
